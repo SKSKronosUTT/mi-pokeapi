@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi-PokeAPI vs PokeAPI</title>
+    <link rel="stylesheet" href="web/styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="panel" id="left-panel">
+            <header class="logo">
+                <img src="web/images/pokeapi-logo.png" alt="PokeAPI logo">
+            </header>
+            <div class="search">
+                <input type="text" id="pokeapi-input" placeholder="Buscar Pokémon (nombre o ID)" autocomplete="off">
+            </div>
+            <article class="card" id="pokeapi-card">
+                <div class="card-id" id="pokeapi-id"># -</div>
+                <div class="card-image">
+                    <img id="pokeapi-img" src="" alt="Imagen de Pokémon">
+                </div>
+                <div class="card-name" id="pokeapi-name">-</div>
+                <div class="card-types" id="pokeapi-types">-</div>
+            </article>
+            <details class="json-details">
+                <summary>JSON response <span class="timing" id="pokeapi-timing"></span></summary>
+                <pre><code id="pokeapi-json"></code></pre>
+            </details>
+        </section>
+
+        <section class="panel" id="right-panel">
+            <header class="logo">
+                <img src="web/images/mi-pokeapi-logo.png" alt="Mi-PokeAPI logo">
+            </header>
+            <div class="search">
+                <input type="text" id="mipokeapi-input" placeholder="Buscar Pokémon (nombre o ID)" autocomplete="off">
+            </div>
+            <article class="card" id="mipokeapi-card">
+                <div class="card-id" id="mipokeapi-id"># -</div>
+                <div class="card-image">
+                    <img id="mipokeapi-img" src="" alt="Imagen de Pokémon">
+                </div>
+                <div class="card-name" id="mipokeapi-name">-</div>
+                <div class="card-types" id="mipokeapi-types">-</div>
+            </article>
+            <details class="json-details">
+                <summary>JSON response <span class="timing" id="mipokeapi-timing"></span></summary>
+                <pre><code id="mipokeapi-json"></code></pre>
+            </details>
+        </section>
+    </main>
+    <script src="web/script.js"></script>
+</body>
+</html>
